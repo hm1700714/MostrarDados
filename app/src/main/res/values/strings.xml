@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Mensagem</string>
+    <string name="enviar">Enviar</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="telemovel">Telemóvel</string>
+    <string name="idade">Idade</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+</resources>
