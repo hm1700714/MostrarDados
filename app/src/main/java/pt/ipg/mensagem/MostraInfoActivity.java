@@ -16,34 +16,34 @@ public class MostraInfoActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
 
-        String mensagem = intent.getStringExtra("Nome");
+        String nome = intent.getStringExtra(App.NOME);
         TextView textViewMensagem = (TextView) findViewById(R.id.textViewNome);
-        textViewMensagem.setText(mensagem);
+        textViewMensagem.setText(nome);
 
 
-        String mensagem1 = intent.getStringExtra("Telemovel");
+        String telemovel = intent.getStringExtra(App.TELEMOVEL);
         TextView textViewTelemovel = (TextView) findViewById(R.id.textViewTelemovel);
-        textViewTelemovel.setText(mensagem1);
+        textViewTelemovel.setText(telemovel);
 
 
-        String mensagem2 = intent.getStringExtra("Email");
+        String email = intent.getStringExtra(App.EMAIL);
         TextView textViewEmail = (TextView) findViewById(R.id.textViewEmail);
-        textViewEmail.setText(mensagem2);
+        textViewEmail.setText(email);
 
-        String mensagem3 = intent.getStringExtra("Idade");
+        String idade = intent.getStringExtra(App.IDADE);
         TextView textViewIdade = (TextView) findViewById(R.id.textViewIdade);
-        textViewIdade.setText(mensagem3);
+        textViewIdade.setText(idade);
 
-        String mensagem4 = intent.getStringExtra("Peso");
+        String peso = intent.getStringExtra(App.PESO);
         TextView textViewPeso = (TextView) findViewById(R.id.textViewPeso);
-        textViewPeso.setText(mensagem4);
+        textViewPeso.setText(peso);
 
-        String mensagem5 = intent.getStringExtra("Altura");
+        String altura = intent.getStringExtra(App.ALTURA);
         TextView textViewAltura = (TextView) findViewById(R.id.textViewAltura);
-        textViewAltura.setText(mensagem5);
+        textViewAltura.setText(altura);
 
 
-        Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show();
+        //Toast.makeText(this, mensagem, Toast.LENGTH_LONG).show();
 
 
 

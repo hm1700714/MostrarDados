@@ -22,30 +22,31 @@ public class MainActivity extends AppCompatActivity {
         //permite ir buscar a caixa de edição de texto
 
         EditText editTextNome = (EditText) findViewById(R.id.editTextNome);
-        String mensagem = editTextNome.getText().toString();
+        String nome = editTextNome.getText().toString();
 
         EditText editTextTelemovel = (EditText) findViewById(R.id.editTextTelemovel);
-        String mensagem1 = editTextTelemovel.getText().toString();
+        String telemovel = editTextTelemovel.getText().toString();
 
         EditText editTextEmail = (EditText) findViewById(R.id.editTextEmail);
-        String mensagem2 = editTextEmail.getText().toString();
+        String email = editTextEmail.getText().toString();
 
         EditText editTextIdade = (EditText) findViewById(R.id.editTextIdade);
-        String mensagem3 = editTextIdade.getText().toString();
+        String idade = editTextIdade.getText().toString();
 
         EditText editTextPeso = (EditText) findViewById(R.id.editTextPeso);
-        String mensagem4 = editTextPeso.getText().toString();
+        String peso = editTextPeso.getText().toString();
 
         EditText editTextAltura = (EditText) findViewById(R.id.editTextAltura);
-        String mensagem5 = editTextAltura.getText().toString();
+        String altura = editTextAltura.getText().toString();
 
 
-        intent.putExtra("Nome", mensagem);
-        intent.putExtra("Telemovel", mensagem1);
-        intent.putExtra("Email", mensagem2);
-        intent.putExtra("Idade", mensagem3);
-        intent.putExtra("Peso", mensagem4);
-        intent.putExtra("Altura", mensagem5);
+
+        intent.putExtra(App.NOME, nome);
+        intent.putExtra(App.TELEMOVEL, telemovel);
+        intent.putExtra(App.EMAIL, email);
+        intent.putExtra(App.IDADE, idade);
+        intent.putExtra(App.PESO, peso);
+        intent.putExtra(App.ALTURA, altura);
 
         startActivity(intent);
 
