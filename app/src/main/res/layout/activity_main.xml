@@ -42,7 +42,7 @@
         android:ems="10"
         android:hint="@string/telemovel"
         android:importantForAutofill="no"
-        android:inputType="textShortMessage|textAutoCorrect"
+        android:inputType="phone"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextNome" />
@@ -55,7 +55,7 @@
         android:ems="10"
         android:hint="@string/email"
         android:importantForAutofill="no"
-        android:inputType="textShortMessage|textAutoCorrect"
+        android:inputType="none|textWebEmailAddress"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTelemovel" />
@@ -68,7 +68,7 @@
         android:ems="10"
         android:hint="@string/idade"
         android:importantForAutofill="no"
-        android:inputType="textShortMessage|textAutoCorrect"
+        android:inputType="number"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextEmail" />
