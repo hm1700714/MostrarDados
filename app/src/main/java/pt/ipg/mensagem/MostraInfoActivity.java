@@ -30,7 +30,7 @@ public class MostraInfoActivity extends AppCompatActivity {
         TextView textViewEmail = (TextView) findViewById(R.id.textViewEmail);
         textViewEmail.setText(email);
 
-        String idade = intent.getStringExtra(App.IDADE);
+        int idade = intent.getIntExtra(App.IDADE, 18);
         TextView textViewIdade = (TextView) findViewById(R.id.textViewIdade);
         textViewIdade.setText(idade);
 

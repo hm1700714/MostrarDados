@@ -51,13 +51,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
         EditText editTextIdade = (EditText) findViewById(R.id.editTextIdade);
-        String idade = editTextIdade.getText().toString();
+        String srtIdade = editTextIdade.getText().toString();
 
-        if(idade.length() == 0){
-            editTextIdade.setError("Falta preencher a idade.");
+        int idade;
+        try {
+            idade = Integer.parseInt(srtIdade);
+        } catch (NumberFormatException e) {
+            editTextIdade.setError("Idade Inválida. Preencha a idade");
             editTextIdade.requestFocus();
             return;
         }
+
+        if(idade < 18){
+            editTextIdade.setError("A idade tem de ser maior ou igual a 18 anos");
+            editTextIdade.requestFocus();
+            return;
+        }
+
 
         EditText editTextPeso = (EditText) findViewById(R.id.editTextPeso);
         String peso = editTextPeso.getText().toString();
