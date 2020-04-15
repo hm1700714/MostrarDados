@@ -19,10 +19,17 @@ public class MainActivity extends AppCompatActivity {
 
         Intent intent = new Intent(this, MostraInfoActivity.class);
 
-        //permite ir buscar a caixa de edição de texto
+        //Permite ir buscar a caixa de edição de texto
 
         EditText editTextNome = (EditText) findViewById(R.id.editTextNome);
         String nome = editTextNome.getText().toString();
+
+        //verificação de dados para o nome
+
+        if(nome.length() == 0){
+            editTextNome.setError("Falta preencher o nome");
+            return;
+        }
 
         EditText editTextTelemovel = (EditText) findViewById(R.id.editTextTelemovel);
         String telemovel = editTextTelemovel.getText().toString();
