@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mensagem</string>
+    <string name="enviar">Enviar</string>
+    <string name="mensagem">Mensagem</string>
+    <string name="telemovel">Telemóvel</string>
+    <string name="idade">Idade</string>
+    <string name="peso">Peso</string>
+    <string name="altura">Altura</string>
+    <string name="email">Email</string>
+    <string name="nome">Nome</string>
+    <string name="preencherNome">Falta preencher o nome.</string>
+    <string name="preencherTelemovel">Telefone Inválido.Falta preencher o numero de telemóvel.</string>
+    <string name="preencherEmail">Falta preencher o email.</string>
+    <string name="idadeInvalida">Idade Inválida. Preencha a idade</string>
+    <string name="idadeMais18">A idade tem de ser maior ou igual a 18 anos</string>
+    <string name="preencherPeso">Falta preencher o peso.</string>
+    <string name="preencherAltura">Falta preencher a altura.</string>
+</resources>

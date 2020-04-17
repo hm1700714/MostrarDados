@@ -1,11 +1,18 @@
 <resources>
-    <string name="app_name">Mensagem</string>
-    <string name="enviar">Enviar</string>
-    <string name="mensagem">Mensagem</string>
-    <string name="telemovel">Telemóvel</string>
-    <string name="idade">Idade</string>
-    <string name="peso">Peso</string>
-    <string name="altura">Altura</string>
+    <string name="app_name">Mesage</string>
+    <string name="enviar">Send</string>
+    <string name="mensagem">Mesage</string>
+    <string name="telemovel">Phone</string>
+    <string name="idade">Age</string>
+    <string name="peso">Weight</string>
     <string name="email">Email</string>
-    <string name="nome">Nome</string>
+    <string name="nome">Name</string>
+    <string name="altura">Height</string>
+    <string name="preencherNome">Name Required</string>
+    <string name="preencherTelemovel">Phone Required</string>
+    <string name="preencherEmail">Email Required</string>
+    <string name="idadeInvalida">Age Required</string>
+    <string name="idadeMais18">Age higher than 18 Required</string>
+    <string name="preencherPeso">Weight Required</string>
+    <string name="preencherAltura">Height Required</string>
 </resources>

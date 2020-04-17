@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         //verificação de dados para o nome
 
         if(nome.length() == 0){
-            editTextNome.setError("Falta preencher o nome.");
+            editTextNome.setError(getString(R.string.preencherNome));
             editTextNome.requestFocus();
             return;
         }
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         String telemovel = editTextTelemovel.getText().toString();
 
         if(telemovel.length() < 9){
-            editTextTelemovel.setError("Telefone Inválido.Falta preencher o numero de telemóvel.");
+            editTextTelemovel.setError(getString(R.string.preencherTelemovel));
             editTextTelemovel.requestFocus();
             return;
         }
@@ -45,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
         String email = editTextEmail.getText().toString();
 
         if(email.length() == 0){
-            editTextEmail.setError("Falta preencher o email.");
+            editTextEmail.setError(getString(R.string.preencherEmail));
             editTextEmail.requestFocus();
             return;
         }
@@ -57,13 +57,13 @@ public class MainActivity extends AppCompatActivity {
         try {
             idade = Integer.parseInt(srtIdade);
         } catch (NumberFormatException e) {
-            editTextIdade.setError("Idade Inválida. Preencha a idade");
+            editTextIdade.setError(getString(R.string.idadeInvalida));
             editTextIdade.requestFocus();
             return;
         }
 
         if(idade < 18){
-            editTextIdade.setError("A idade tem de ser maior ou igual a 18 anos");
+            editTextIdade.setError(getString(R.string.idadeMais18));
             editTextIdade.requestFocus();
             return;
         }
@@ -73,7 +73,7 @@ public class MainActivity extends AppCompatActivity {
         String peso = editTextPeso.getText().toString();
 
         if(peso.length() == 0){
-            editTextPeso.setError("Falta preencher o peso.");
+            editTextPeso.setError(getString(R.string.preencherPeso));
             editTextPeso.requestFocus();
             return;
         }
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
         String altura = editTextAltura.getText().toString();
 
         if(altura.length() == 0){
-            editTextAltura.setError("Falta preencher a altura.");
+            editTextAltura.setError(getString(R.string.preencherAltura));
             editTextAltura.requestFocus();
             return;
         }
